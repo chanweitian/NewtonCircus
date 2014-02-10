@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFBC6AE518A8B11100EF259B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE418A8B11100EF259B /* Foundation.framework */; };
+		DFBC6AE718A8B11100EF259B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */; };
+		DFBC6AE918A8B11100EF259B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE818A8B11100EF259B /* UIKit.framework */; };
+		DFBC6AEF18A8B11100EF259B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFBC6AED18A8B11100EF259B /* InfoPlist.strings */; };
+		DFBC6AF118A8B11100EF259B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC6AF018A8B11100EF259B /* main.m */; };
+		DFBC6AF518A8B11100EF259B /* NCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC6AF418A8B11100EF259B /* NCAppDelegate.m */; };
+		DFBC6AF818A8B11100EF259B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBC6AF618A8B11100EF259B /* Main.storyboard */; };
+		DFBC6AFB18A8B11100EF259B /* NCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC6AFA18A8B11100EF259B /* NCViewController.m */; };
+		DFBC6AFD18A8B11100EF259B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBC6AFC18A8B11100EF259B /* Images.xcassets */; };
+		DFBC6B0418A8B11100EF259B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6B0318A8B11100EF259B /* XCTest.framework */; };
+		DFBC6B0518A8B11100EF259B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE418A8B11100EF259B /* Foundation.framework */; };
+		DFBC6B0618A8B11100EF259B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE818A8B11100EF259B /* UIKit.framework */; };
+		DFBC6B0E18A8B11100EF259B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFBC6B0C18A8B11100EF259B /* InfoPlist.strings */; };
+		DFBC6B1018A8B11100EF259B /* NewtonCircusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC6B0F18A8B11100EF259B /* NewtonCircusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFBC6B0718A8B11100EF259B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBC6AD918A8B11100EF259B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBC6AE018A8B11100EF259B;
+			remoteInfo = NewtonCircus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFBC6AE118A8B11100EF259B /* NewtonCircus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewtonCircus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBC6AE418A8B11100EF259B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFBC6AE818A8B11100EF259B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFBC6AEC18A8B11100EF259B /* NewtonCircus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewtonCircus-Info.plist"; sourceTree = "<group>"; };
+		DFBC6AEE18A8B11100EF259B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFBC6AF018A8B11100EF259B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFBC6AF218A8B11100EF259B /* NewtonCircus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewtonCircus-Prefix.pch"; sourceTree = "<group>"; };
+		DFBC6AF318A8B11100EF259B /* NCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCAppDelegate.h; sourceTree = "<group>"; };
+		DFBC6AF418A8B11100EF259B /* NCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCAppDelegate.m; sourceTree = "<group>"; };
+		DFBC6AF718A8B11100EF259B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFBC6AF918A8B11100EF259B /* NCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCViewController.h; sourceTree = "<group>"; };
+		DFBC6AFA18A8B11100EF259B /* NCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCViewController.m; sourceTree = "<group>"; };
+		DFBC6AFC18A8B11100EF259B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFBC6B0218A8B11100EF259B /* NewtonCircusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtonCircusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBC6B0318A8B11100EF259B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DFBC6B0B18A8B11100EF259B /* NewtonCircusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewtonCircusTests-Info.plist"; sourceTree = "<group>"; };
+		DFBC6B0D18A8B11100EF259B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFBC6B0F18A8B11100EF259B /* NewtonCircusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewtonCircusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFBC6ADE18A8B11100EF259B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6AE718A8B11100EF259B /* CoreGraphics.framework in Frameworks */,
+				DFBC6AE918A8B11100EF259B /* UIKit.framework in Frameworks */,
+				DFBC6AE518A8B11100EF259B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBC6AFF18A8B11100EF259B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6B0418A8B11100EF259B /* XCTest.framework in Frameworks */,
+				DFBC6B0618A8B11100EF259B /* UIKit.framework in Frameworks */,
+				DFBC6B0518A8B11100EF259B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFBC6AD818A8B11100EF259B = {
+			isa = PBXGroup;
+			children = (
+				DFBC6AEA18A8B11100EF259B /* NewtonCircus */,
+				DFBC6B0918A8B11100EF259B /* NewtonCircusTests */,
+				DFBC6AE318A8B11100EF259B /* Frameworks */,
+				DFBC6AE218A8B11100EF259B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFBC6AE218A8B11100EF259B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6AE118A8B11100EF259B /* NewtonCircus.app */,
+				DFBC6B0218A8B11100EF259B /* NewtonCircusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFBC6AE318A8B11100EF259B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6AE418A8B11100EF259B /* Foundation.framework */,
+				DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */,
+				DFBC6AE818A8B11100EF259B /* UIKit.framework */,
+				DFBC6B0318A8B11100EF259B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFBC6AEA18A8B11100EF259B /* NewtonCircus */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6AF318A8B11100EF259B /* NCAppDelegate.h */,
+				DFBC6AF418A8B11100EF259B /* NCAppDelegate.m */,
+				DFBC6AF618A8B11100EF259B /* Main.storyboard */,
+				DFBC6AF918A8B11100EF259B /* NCViewController.h */,
+				DFBC6AFA18A8B11100EF259B /* NCViewController.m */,
+				DFBC6AFC18A8B11100EF259B /* Images.xcassets */,
+				DFBC6AEB18A8B11100EF259B /* Supporting Files */,
+			);
+			path = NewtonCircus;
+			sourceTree = "<group>";
+		};
+		DFBC6AEB18A8B11100EF259B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6AEC18A8B11100EF259B /* NewtonCircus-Info.plist */,
+				DFBC6AED18A8B11100EF259B /* InfoPlist.strings */,
+				DFBC6AF018A8B11100EF259B /* main.m */,
+				DFBC6AF218A8B11100EF259B /* NewtonCircus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFBC6B0918A8B11100EF259B /* NewtonCircusTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6B0F18A8B11100EF259B /* NewtonCircusTests.m */,
+				DFBC6B0A18A8B11100EF259B /* Supporting Files */,
+			);
+			path = NewtonCircusTests;
+			sourceTree = "<group>";
+		};
+		DFBC6B0A18A8B11100EF259B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC6B0B18A8B11100EF259B /* NewtonCircusTests-Info.plist */,
+				DFBC6B0C18A8B11100EF259B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFBC6AE018A8B11100EF259B /* NewtonCircus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBC6B1318A8B11100EF259B /* Build configuration list for PBXNativeTarget "NewtonCircus" */;
+			buildPhases = (
+				DFBC6ADD18A8B11100EF259B /* Sources */,
+				DFBC6ADE18A8B11100EF259B /* Frameworks */,
+				DFBC6ADF18A8B11100EF259B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewtonCircus;
+			productName = NewtonCircus;
+			productReference = DFBC6AE118A8B11100EF259B /* NewtonCircus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFBC6B0118A8B11100EF259B /* NewtonCircusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBC6B1618A8B11100EF259B /* Build configuration list for PBXNativeTarget "NewtonCircusTests" */;
+			buildPhases = (
+				DFBC6AFE18A8B11100EF259B /* Sources */,
+				DFBC6AFF18A8B11100EF259B /* Frameworks */,
+				DFBC6B0018A8B11100EF259B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBC6B0818A8B11100EF259B /* PBXTargetDependency */,
+			);
+			name = NewtonCircusTests;
+			productName = NewtonCircusTests;
+			productReference = DFBC6B0218A8B11100EF259B /* NewtonCircusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFBC6AD918A8B11100EF259B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Weitian Chan";
+				TargetAttributes = {
+					DFBC6B0118A8B11100EF259B = {
+						TestTargetID = DFBC6AE018A8B11100EF259B;
+					};
+				};
+			};
+			buildConfigurationList = DFBC6ADC18A8B11100EF259B /* Build configuration list for PBXProject "NewtonCircus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFBC6AD818A8B11100EF259B;
+			productRefGroup = DFBC6AE218A8B11100EF259B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFBC6AE018A8B11100EF259B /* NewtonCircus */,
+				DFBC6B0118A8B11100EF259B /* NewtonCircusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFBC6ADF18A8B11100EF259B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6AFD18A8B11100EF259B /* Images.xcassets in Resources */,
+				DFBC6AEF18A8B11100EF259B /* InfoPlist.strings in Resources */,
+				DFBC6AF818A8B11100EF259B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBC6B0018A8B11100EF259B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6B0E18A8B11100EF259B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFBC6ADD18A8B11100EF259B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6AFB18A8B11100EF259B /* NCViewController.m in Sources */,
+				DFBC6AF118A8B11100EF259B /* main.m in Sources */,
+				DFBC6AF518A8B11100EF259B /* NCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBC6AFE18A8B11100EF259B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBC6B1018A8B11100EF259B /* NewtonCircusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFBC6B0818A8B11100EF259B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBC6AE018A8B11100EF259B /* NewtonCircus */;
+			targetProxy = DFBC6B0718A8B11100EF259B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFBC6AED18A8B11100EF259B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBC6AEE18A8B11100EF259B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFBC6AF618A8B11100EF259B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBC6AF718A8B11100EF259B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFBC6B0C18A8B11100EF259B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBC6B0D18A8B11100EF259B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFBC6B1118A8B11100EF259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFBC6B1218A8B11100EF259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFBC6B1418A8B11100EF259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
+				INFOPLIST_FILE = "NewtonCircus/NewtonCircus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFBC6B1518A8B11100EF259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
+				INFOPLIST_FILE = "NewtonCircus/NewtonCircus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DFBC6B1718A8B11100EF259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewtonCircus.app/NewtonCircus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NewtonCircusTests/NewtonCircusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DFBC6B1818A8B11100EF259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewtonCircus.app/NewtonCircus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
+				INFOPLIST_FILE = "NewtonCircusTests/NewtonCircusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFBC6ADC18A8B11100EF259B /* Build configuration list for PBXProject "NewtonCircus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBC6B1118A8B11100EF259B /* Debug */,
+				DFBC6B1218A8B11100EF259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBC6B1318A8B11100EF259B /* Build configuration list for PBXNativeTarget "NewtonCircus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBC6B1418A8B11100EF259B /* Debug */,
+				DFBC6B1518A8B11100EF259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFBC6B1618A8B11100EF259B /* Build configuration list for PBXNativeTarget "NewtonCircusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBC6B1718A8B11100EF259B /* Debug */,
+				DFBC6B1818A8B11100EF259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFBC6AD918A8B11100EF259B /* Project object */;
+}
