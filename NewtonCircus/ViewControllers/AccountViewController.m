@@ -7,6 +7,7 @@
 //
 
 #import "AccountViewController.h"
+#import <Parse/Parse.h>
 
 @interface AccountViewController ()
 
@@ -24,53 +25,60 @@
     return self;
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+ 
+    PFUser *currentUser = [PFUser currentUser];
+   // PFRelation *accountRelations = [currentUser relationforKey:@"accounts"];
+    
+   // PFRelation *locationsRelations = [currentUser relationForKey:@"fav_locations"];
+    
+ //   PFQuery *accountQuery = [accountRelations query];
+//    PFQuery *locationQuery = [locationsRelations query];
+    PFQuery *userQuery = [PFQuery queryWithClassName:@"User"];
+    
+    [userQuery whereKey:@"objectId" equalTo: currentUser.objectId];
+    //[userQuery includeKey:@"accounts"];
+    //[userQuery includeKey:@"fav_locations"];
+    
+    
+//    PFQuery *query = [PFQuery orQueryWithSubqueries:@[userQuery,accountQuery,locationQuery]];
+    
+    [userQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved: %@", objects);
+            
+            PFObject *accountDetails = [objects objectAtIndex:0];
+            
+            self.mobileL.text = currentUser.username;
+            self.firstNameL.text = [accountDetails valueForKey:@"first_name"];
+            self.lastNameL.text = [accountDetails valueForKey:@"last_name"];
+            
+            self.accountTypeL.text = [accountDetails valueForKey:@"account_name"];
+            self.accountIdL.text = [accountDetails valueForKey:@"account_id"];
+            self.pendingPaymentL.text = [NSString stringWithFormat:@"%@",[accountDetails valueForKey:@"payment_pending"]];
+            self.lifetimeEarningL.text = [NSString stringWithFormat:@"%@",[accountDetails valueForKey:@"earnings"]];
+
+            
+            [self.tableView reloadData];
+            
+            
+        } else {
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            NSLog(@"Error: %@", errorString);
+        }
+    }];
+
+    
+
+    
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    //UILocalizedIndexedCollation *theCollation = [UILocalizedIndexedCollation currentCollation];
-   
-    /*
-    
-    self.accountInfo = [[NSMutableArray alloc] initWithCapacity:3];
-
-    NSDictionary *accountDetails = @{
-                                     @"Mobile Number": [NSNumber numberWithInt:92387434],
-                                     @"First name": @"null",
-                                     @"Sceond name":@"null"
-                                     };
-    NSDictionary *yourEarnings = @{@"Account Type": @"ez-link",
-                                   @"Account ID":@"2334203495809385",
-                                   @"Pending Payment": [NSNumber numberWithDouble:0.00],
-                                   @"Lifetime Earning": [NSNumber numberWithDouble:0.00]
-                                   };
-    
-    
-    NSDictionary *favouriteLocation = @{@"Home": @"Amber Garden",
-                                        @"Work": @"Orchard",
-                                        @"Others": @"null"
-                                        };
-    
-    
-    
-    
-    [self.accountInfo addObject:accountDetails];
-    [self.accountInfo addObject:yourEarnings];
-    [self.accountInfo addObject:favouriteLocation];
-     
-     */
-    
-    
     self.navigationController.navigationBar.translucent = NO;
-
-
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     
 }
 

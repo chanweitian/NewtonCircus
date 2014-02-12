@@ -32,7 +32,7 @@
     self.NewLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.NewLabel.numberOfLines = 0;
     
-    self.mobileTF.secureTextEntry=YES;
+    self.passwordTF.secureTextEntry=YES;
     
 }
 
