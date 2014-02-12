@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF3BB28218A9E26100BF009F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BB28118A9E26100BF009F /* LoginViewController.m */; };
+		DF3BB28418A9E42700BF009F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3BB28318A9E42700BF009F /* Parse.framework */; };
+		DF7EC52D18A9EB3D0098DF4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC52C18A9EB3D0098DF4E /* SystemConfiguration.framework */; };
+		DF7EC52F18A9EB450098DF4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC52E18A9EB450098DF4E /* Security.framework */; };
+		DF7EC53118A9EB5F0098DF4E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53018A9EB5F0098DF4E /* AudioToolbox.framework */; };
+		DF7EC53318A9EB660098DF4E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53218A9EB660098DF4E /* CFNetwork.framework */; };
+		DF7EC53518A9EBF20098DF4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53418A9EBF20098DF4E /* CoreLocation.framework */; };
+		DF7EC53718A9EBFC0098DF4E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53618A9EBFC0098DF4E /* libz.dylib */; };
+		DF7EC53918A9EC020098DF4E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53818A9EC020098DF4E /* MobileCoreServices.framework */; };
+		DF7EC53B18A9EC090098DF4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53A18A9EC090098DF4E /* QuartzCore.framework */; };
+		DF7EC53D18A9EC120098DF4E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7EC53C18A9EC120098DF4E /* StoreKit.framework */; };
+		DF7EC54018AA04600098DF4E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7EC53F18AA04600098DF4E /* AccountViewController.m */; };
 		DFBC6AE518A8B11100EF259B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE418A8B11100EF259B /* Foundation.framework */; };
 		DFBC6AE718A8B11100EF259B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */; };
 		DFBC6AE918A8B11100EF259B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBC6AE818A8B11100EF259B /* UIKit.framework */; };
@@ -34,6 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF3BB28018A9E26100BF009F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DF3BB28118A9E26100BF009F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DF3BB28318A9E42700BF009F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DF7EC52C18A9EB3D0098DF4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF7EC52E18A9EB450098DF4E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DF7EC53018A9EB5F0098DF4E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DF7EC53218A9EB660098DF4E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DF7EC53418A9EBF20098DF4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DF7EC53618A9EBFC0098DF4E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DF7EC53818A9EC020098DF4E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DF7EC53A18A9EC090098DF4E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF7EC53C18A9EC120098DF4E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DF7EC53E18AA04600098DF4E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		DF7EC53F18AA04600098DF4E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		DFBC6AE118A8B11100EF259B /* NewtonCircus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewtonCircus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBC6AE418A8B11100EF259B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +86,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF7EC53D18A9EC120098DF4E /* StoreKit.framework in Frameworks */,
+				DF7EC53B18A9EC090098DF4E /* QuartzCore.framework in Frameworks */,
+				DF7EC53918A9EC020098DF4E /* MobileCoreServices.framework in Frameworks */,
+				DF7EC53718A9EBFC0098DF4E /* libz.dylib in Frameworks */,
+				DF7EC53518A9EBF20098DF4E /* CoreLocation.framework in Frameworks */,
 				DFBC6AE718A8B11100EF259B /* CoreGraphics.framework in Frameworks */,
+				DF7EC53318A9EB660098DF4E /* CFNetwork.framework in Frameworks */,
+				DF7EC53118A9EB5F0098DF4E /* AudioToolbox.framework in Frameworks */,
+				DF7EC52F18A9EB450098DF4E /* Security.framework in Frameworks */,
+				DF7EC52D18A9EB3D0098DF4E /* SystemConfiguration.framework in Frameworks */,
 				DFBC6AE918A8B11100EF259B /* UIKit.framework in Frameworks */,
+				DF3BB28418A9E42700BF009F /* Parse.framework in Frameworks */,
 				DFBC6AE518A8B11100EF259B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF3BB27F18A9E26100BF009F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF7EC53E18AA04600098DF4E /* AccountViewController.h */,
+				DF7EC53F18AA04600098DF4E /* AccountViewController.m */,
+				DF3BB28018A9E26100BF009F /* LoginViewController.h */,
+				DF3BB28118A9E26100BF009F /* LoginViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DFBC6AD818A8B11100EF259B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +148,16 @@
 		DFBC6AE318A8B11100EF259B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF7EC53C18A9EC120098DF4E /* StoreKit.framework */,
+				DF7EC53A18A9EC090098DF4E /* QuartzCore.framework */,
+				DF7EC53818A9EC020098DF4E /* MobileCoreServices.framework */,
+				DF7EC53618A9EBFC0098DF4E /* libz.dylib */,
+				DF7EC53418A9EBF20098DF4E /* CoreLocation.framework */,
+				DF7EC53218A9EB660098DF4E /* CFNetwork.framework */,
+				DF7EC53018A9EB5F0098DF4E /* AudioToolbox.framework */,
+				DF7EC52E18A9EB450098DF4E /* Security.framework */,
+				DF7EC52C18A9EB3D0098DF4E /* SystemConfiguration.framework */,
+				DF3BB28318A9E42700BF009F /* Parse.framework */,
 				DFBC6AE418A8B11100EF259B /* Foundation.framework */,
 				DFBC6AE618A8B11100EF259B /* CoreGraphics.framework */,
 				DFBC6AE818A8B11100EF259B /* UIKit.framework */,
@@ -112,6 +169,7 @@
 		DFBC6AEA18A8B11100EF259B /* NewtonCircus */ = {
 			isa = PBXGroup;
 			children = (
+				DF3BB27F18A9E26100BF009F /* ViewControllers */,
 				DFBC6AF318A8B11100EF259B /* NCAppDelegate.h */,
 				DFBC6AF418A8B11100EF259B /* NCAppDelegate.m */,
 				DFBC6AF618A8B11100EF259B /* Main.storyboard */,
@@ -250,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3BB28218A9E26100BF009F /* LoginViewController.m in Sources */,
 				DFBC6AFB18A8B11100EF259B /* NCViewController.m in Sources */,
 				DFBC6AF118A8B11100EF259B /* main.m in Sources */,
 				DFBC6AF518A8B11100EF259B /* NCAppDelegate.m in Sources */,
+				DF7EC54018AA04600098DF4E /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/weitianchan/Project/NewtonCircus,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
 				INFOPLIST_FILE = "NewtonCircus/NewtonCircus-Info.plist";
@@ -392,6 +456,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/weitianchan/Project/NewtonCircus,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewtonCircus/NewtonCircus-Prefix.pch";
 				INFOPLIST_FILE = "NewtonCircus/NewtonCircus-Info.plist";
@@ -461,6 +529,7 @@
 				DFBC6B1518A8B11100EF259B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFBC6B1618A8B11100EF259B /* Build configuration list for PBXNativeTarget "NewtonCircusTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +538,7 @@
 				DFBC6B1818A8B11100EF259B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
