@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *firstNameL;
 @property (strong, nonatomic) IBOutlet UILabel *lastNameL;
 
+
 @property (strong, nonatomic) IBOutlet UILabel *accountTypeL;
 @property (strong, nonatomic) IBOutlet UILabel *accountIdL;
 @property (strong, nonatomic) IBOutlet UILabel *pendingPaymentL;

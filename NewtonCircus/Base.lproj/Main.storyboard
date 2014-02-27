@@ -309,8 +309,8 @@
                                                     <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="null" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k1t-Sd-AdC">
-                                                    <rect key="frame" x="112" y="13" width="23" height="17"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="None" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k1t-Sd-AdC">
+                                                    <rect key="frame" x="112" y="13" width="35" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -333,8 +333,8 @@
                                                     <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="null" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSY-t9-wOu">
-                                                    <rect key="frame" x="112" y="13" width="23" height="17"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="None" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSY-t9-wOu">
+                                                    <rect key="frame" x="112" y="13" width="35" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -357,8 +357,8 @@
                                                     <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="null" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wd5-1N-DYW">
-                                                    <rect key="frame" x="112" y="13" width="23" height="17"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="None" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wd5-1N-DYW">
+                                                    <rect key="frame" x="112" y="13" width="35" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -382,7 +382,7 @@
                         <outlet property="accountTypeL" destination="Nmp-RO-xsR" id="6tF-cD-yP2"/>
                         <outlet property="firstNameL" destination="QAe-7m-KC8" id="cbl-Lb-QjA"/>
                         <outlet property="homeL" destination="k1t-Sd-AdC" id="N2G-KA-Dib"/>
-                        <outlet property="lastNameL" destination="cmq-Th-Eu0" id="JVg-61-W55"/>
+                        <outlet property="lastNameL" destination="sTC-iy-YZB" id="LuN-qq-SSj"/>
                         <outlet property="lifetimeEarningL" destination="nAG-ib-SHi" id="TNJ-Y0-LkK"/>
                         <outlet property="mobileL" destination="73a-c1-dXD" id="Wrx-uU-Nxi"/>
                         <outlet property="othersL" destination="Wd5-1N-DYW" id="bkJ-1f-uq3"/>

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Weitian Chan. All rights reserved.
 //
 
+#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
 #import "AccountViewController.h"
 #import <Parse/Parse.h>
 
@@ -28,36 +30,88 @@
 - (void) viewWillAppear:(BOOL)animated {
  
     PFUser *currentUser = [PFUser currentUser];
-   // PFRelation *accountRelations = [currentUser relationforKey:@"accounts"];
+    PFRelation *accountRelations = [currentUser relationforKey:@"accounts"];
     
-   // PFRelation *locationsRelations = [currentUser relationForKey:@"fav_locations"];
+    PFRelation *locationsRelations = [currentUser relationForKey:@"fav_locations"];
     
- //   PFQuery *accountQuery = [accountRelations query];
-//    PFQuery *locationQuery = [locationsRelations query];
-    PFQuery *userQuery = [PFQuery queryWithClassName:@"User"];
-    
-    [userQuery whereKey:@"objectId" equalTo: currentUser.objectId];
-    //[userQuery includeKey:@"accounts"];
-    //[userQuery includeKey:@"fav_locations"];
+    PFQuery *accountQuery = [accountRelations query];
+    PFQuery *locationQuery = [locationsRelations query];
     
     
-//    PFQuery *query = [PFQuery orQueryWithSubqueries:@[userQuery,accountQuery,locationQuery]];
-    
-    [userQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    [accountQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"Successfully retrieved: %@", objects);
             
             PFObject *accountDetails = [objects objectAtIndex:0];
             
             self.mobileL.text = currentUser.username;
-            self.firstNameL.text = [accountDetails valueForKey:@"first_name"];
-            self.lastNameL.text = [accountDetails valueForKey:@"last_name"];
+            self.firstNameL.text = [currentUser valueForKey:@"first_name"];
+            self.lastNameL.text = [currentUser valueForKey:@"last_name"];
             
             self.accountTypeL.text = [accountDetails valueForKey:@"account_name"];
             self.accountIdL.text = [accountDetails valueForKey:@"account_id"];
             self.pendingPaymentL.text = [NSString stringWithFormat:@"%@",[accountDetails valueForKey:@"payment_pending"]];
             self.lifetimeEarningL.text = [NSString stringWithFormat:@"%@",[accountDetails valueForKey:@"earnings"]];
 
+            
+            [self.tableView reloadData];
+            
+            
+        } else {
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            NSLog(@"Error: %@", errorString);
+        }
+    }];
+
+    
+    
+    [locationQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved: %@", objects);
+            
+            for(PFObject *object in objects){
+                
+                //need to perform reverse geocoding using google
+                
+                /*https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true_or_false&key=API_KEY */
+                
+                
+                NSString *geocodeURLString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%@&sensor=true",[locationQuery valueForKey:@"geopoint"] ];
+            
+//                NSString *geocodeURLString = @"https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true";
+                NSURL *geocodeURL = [NSURL URLWithString:geocodeURLString];
+                
+
+                NSData* data = [NSData dataWithContentsOfURL:
+                                    geocodeURL];
+                
+                NSError *geocodeError;
+                
+                NSDictionary *geocodeJson = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&geocodeError];
+                
+                NSString *location = @"None";
+                
+                if([geocodeJson objectForKey:@"formatted_address"]){
+                    location = [geocodeJson objectForKey:@"formatted_address"];
+                };
+                
+                NSLog(@"Location: %@",location);
+                
+            
+                if([[object valueForKey:@"type"] isEqualToString:@"home"]){
+                    self.homeL.text = location;
+                    
+                } else if([[object valueForKey:@"type"] isEqualToString:@"work"]){
+                    self.workL.text = location;
+                    
+                } else if([[object valueForKey:@"type"] isEqualToString:@"other"]){
+                
+                    self.othersL.text = location;
+                }
+                
+                
+            }
+            
             
             [self.tableView reloadData];
             

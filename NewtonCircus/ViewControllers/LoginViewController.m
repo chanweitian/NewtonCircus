@@ -37,8 +37,8 @@
 }
 
 - (IBAction)loginPressed:(id)sender {
-    [self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
-/*
+    //[self performSegueWithIdentifier:@"LoginSuccessful" sender:self];
+
     [PFUser logInWithUsernameInBackground:self.mobileTF.text password:self.passwordTF.text block:^(PFUser *user, NSError *error) {
         if (user){
             //If user login successfully,
@@ -49,7 +49,7 @@
             UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [errorAlertView show];
         }
-    }];*/
+    }];
   
 }
 
